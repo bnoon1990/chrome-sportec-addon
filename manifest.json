@@ -6,9 +6,13 @@
         "128": "images/football-128.png"
     }
     },
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["tabs", "activeTab", "scripting"],
   "manifest_version": 3,
   "name": "Soccer play",
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
   "description": "Enable automatic opening of first football link on game.",
   "version": "1.0",
   "icons": {
