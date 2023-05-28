@@ -4,8 +4,9 @@ if (typeof linkNo !== 'undefined') {
     var linkNo = 2;
 }
 console.log("linkNo = " + linkNo);
-var row = document.getElementsByClassName('display-bg')[linkNo];
-var nLink = row.firstChild.href;
+var row = document.getElementsByClassName('row')[linkNo];
+console.log(row);
+var nLink = row.querySelector('a').href;
 
 window.open(nLink,'SOCCER');
 
